@@ -1,115 +1,233 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPACE TECHNOLOGY LIMITED</title>
-    <style>
-        :root {
-            --primary-color: #4285f4;
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Spaple | Android applications developer</title>
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--bg-gradient);
-            color: white;
-            overflow: hidden;
-        }
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            animation: fadeIn 0.8s ease-out;
-        }
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 
-        .name {
-            font-weight: 800;
-            background: linear-gradient(to right, #fff, #ddd);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
-        p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            margin-bottom: 2rem;
-        }
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-        .timer-circle {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            font-weight: bold;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid #fff;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
 
-        .seconds {
-            animation: none; /* 防止文字跟着转 */
-            position: absolute;
-        }
+		<!-- Worthy core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
+	<body class="no-trans">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-    <div class="container">
-        <h1><span class="name">SPACE TECHNOLOGY LIMITED</span></h1>
-        <p>Redirecting...</p >
-        
-        <div class="timer-circle">
-            <span id="countdown" class="seconds">5</span>
-        </div>
-    </div>
+		<!-- header start -->
+		<!-- ================ --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
 
-    <script>
-        let timeLeft = 5;
-        const countdownElement = document.getElementById('countdown');
+						<!-- header-left start -->
+						<!-- ================ -->
+						<div class="header-left clearfix">
 
-        const timer = setInterval(() => {
-            timeLeft--;
-            countdownElement.textContent = timeLeft;
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
+							</div>
 
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                window.location.href = "https://global.app.mi.com/developer?id=1126508&developerName=DREAM%20SPACE%20TECHNOLOGY%20LIMITED&publisherName=Dream%20Space";
-            }
-        }, 1000);
-    </script>
-</body>
+							<!-- name-and-slogan -->
+							<div class="site-name-and-slogan smooth-scroll">
+								<div class="site-name"><a href="#banner">Spaple</a></div>
+								<div class="site-slogan">Android applications developer</div>
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start -->
+						<!-- ================ -->
+						<div class="header-right clearfix">
+
+							<!-- main-navigation start -->
+							<!-- ================ -->
+							<div class="main-navigation animated">
+
+								<!-- navbar start -->
+								<!-- ================ -->
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner">Home</a></li>
+												<li><a href="#applications">Applications</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- banner start -->
+		<!-- ================ -->
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<h1 class="text-center"><span>Spaple</span></h1>
+							<p class="lead text-center">Application development allows us to make this world a little better. We hope this is just the beginning!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section">
+			<div class="container">
+				<h1 class="text-center title" id="applications">Applications</h1>
+				<div class="separator"></div>
+				<p class="lead text-center">With these applications, you can develop your memory and download photos and videos from instagram.</p>
+				<br>			
+				<div class="row object-non-visible" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+						<!-- applications items start -->
+						<div class="isotope-container row grid-space-20">
+							
+							<div class="col-sm-6 col-md-3 isotope-item web-design">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/mnemonist.png" alt="">
+									</div>
+									<a class="btn btn-default btn-block" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										href="https://play.google.com/store/apps/details?id=com.shirokovapp.mnemonist">
+										Mnemonist
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item app-development">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/mnemonist-numbers.png" alt="">
+									</div>
+									<a class="btn btn-default btn-block" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										href="https://play.google.com/store/apps/details?id=com.shirokovapp.mnemonist_numbers">
+										Mnemonist: Numbers
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item site-building">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/insget.png" alt="">
+									</div>
+									<a class="btn btn-default btn-block" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										href="https://play.google.com/store/apps/details?id=com.shirokovapp.instasave">
+										Insget
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 col-md-3 isotope-item web-design">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/phenomenal-memory.png" alt="">
+									</div>
+									<a class="btn btn-default btn-block" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										href="https://play.google.com/store/apps/details?id=com.shirokovapp.phenomenalmemory">
+										Phenomenal Memory
+									</a>
+								</div>
+							
+							</div>
+						<!-- applications items end -->
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section end -->
+		
+		<!-- footer start -->
+		<!-- ================ -->
+		<footer id="footer">
+		
+			<!-- .subfooter start -->
+			<!-- ================ -->
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2026 Spaple</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+
+		</footer>
+		<!-- footer end -->
+	</body>
 </html>
